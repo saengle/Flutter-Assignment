@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_pr_guide/kakao_1/kakao_main.dart';
+
 
 //앱 시작부분
 void main() {
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData.dark(),
-      home: MyHomePage(),
+      home: const KakaoMainScreen(),
     );
   }
 }
