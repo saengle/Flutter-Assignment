@@ -1,5 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_pr_guide/kakao_1/home_screen.dart';
+import 'package:flutter_pr_guide/kakao_1/service_screen.dart';
+
+import 'info_screen.dart';
 
 class KakaoMainScreen extends StatefulWidget {
   const KakaoMainScreen({Key? key}) : super(key: key);
@@ -12,9 +16,9 @@ class _KakaoMainScreenState extends State<KakaoMainScreen> {
   int _selectedIndex = 0;
 
   final screens = [
-    Text('1', style: TextStyle(fontSize: 40),),
-    Text('2', style: TextStyle(fontSize: 40),),
-    Text('3', style: TextStyle(fontSize: 40),),
+    HomeScreen(),
+    ServiceScreen(),
+    InfoScreen(),
   ];
 
   void _onItemTapped(int index) {
